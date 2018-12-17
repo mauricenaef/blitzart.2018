@@ -1,4 +1,4 @@
-logs
-node_modules
-app
-backups
+logs/
+node_modules/
+app/
+backups/
