@@ -1,0 +1,79 @@
+[12-Oct-2017 11:48:02 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[12-Oct-2017 11:59:19 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-includes/update.php on line 131
+[10-Nov-2018 21:02:56 UTC] PHP Warning:  filemtime(): stat failed for /app/public/wp-content/themes/themeName.2018/images/symbol-defs.svg in /app/public/wp-content/themes/themeName.2018/functions.php on line 228
+[10-Nov-2018 21:03:00 UTC] PHP Warning:  filemtime(): stat failed for /app/public/wp-content/themes/themeName.2018/images/symbol-defs.svg in /app/public/wp-content/themes/themeName.2018/functions.php on line 228
+[10-Nov-2018 21:03:00 UTC] PHP Warning:  filemtime(): stat failed for /app/public/wp-content/themes/themeName.2018/images/symbol-defs.svg in /app/public/wp-content/themes/themeName.2018/functions.php on line 228
+[10-Nov-2018 21:03:00 UTC] PHP Warning:  filemtime(): stat failed for /app/public/wp-content/themes/themeName.2018/images/symbol-defs.svg in /app/public/wp-content/themes/themeName.2018/functions.php on line 228
+[10-Nov-2018 21:11:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gutenberg_posted_on() in /app/public/wp-content/themes/themeName.2018/template-parts/content.php:23
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/themeName.2018/single.php(18): get_template_part('template-parts/...', 'post')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/themeName.2018/template-parts/content.php on line 23
+[10-Nov-2018 21:11:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gutenberg_posted_on() in /app/public/wp-content/themes/themeName.2018/template-parts/content.php:23
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/themeName.2018/single.php(18): get_template_part('template-parts/...', 'post')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/themeName.2018/template-parts/content.php on line 23
+[10-Nov-2018 21:11:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gutenberg_posted_on() in /app/public/wp-content/themes/themeName.2018/template-parts/content.php:23
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/themeName.2018/single.php(18): get_template_part('template-parts/...', 'post')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/themeName.2018/template-parts/content.php on line 23
+[10-Nov-2018 22:20:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_plugin_active() in /app/public/wp-content/themes/themeName.2018/inc/admin-carbon-fields.php:27
+Stack trace:
+#0 /app/public/wp-content/themes/themeName.2018/functions.php(315): require()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(81): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#5 /app/public/index.php(17): require('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-content/themes/themeName.2018/inc/admin-carbon-fields.php on line 27
+[10-Nov-2018 22:20:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_plugin_active() in /app/public/wp-content/themes/themeName.2018/inc/admin-carbon-fields.php:27
+Stack trace:
+#0 /app/public/wp-content/themes/themeName.2018/functions.php(315): require()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(81): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#5 {main}
+  thrown in /app/public/wp-content/themes/themeName.2018/inc/admin-carbon-fields.php on line 27
+[10-Nov-2018 22:20:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_plugin_active() in /app/public/wp-content/themes/themeName.2018/inc/admin-carbon-fields.php:27
+Stack trace:
+#0 /app/public/wp-content/themes/themeName.2018/functions.php(315): require()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(81): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin.php(31): require_once('/app/public/wp-...')
+#5 /app/public/wp-admin/post.php(12): require_once('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-content/themes/themeName.2018/inc/admin-carbon-fields.php on line 27
+[16-Dec-2018 11:22:35 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-admin/includes/update.php on line 121
+[16-Dec-2018 11:30:05 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-includes/update.php on line 155
+[16-Dec-2018 11:30:13 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-includes/update.php on line 529
+[16-Dec-2018 11:40:28 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-admin/includes/update.php on line 121
+[16-Dec-2018 11:43:22 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-admin/includes/update.php on line 121
+[16-Dec-2018 11:43:43 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-includes/update.php on line 155
+[16-Dec-2018 11:43:48 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-includes/update.php on line 347
+[16-Dec-2018 11:43:58 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-includes/update.php on line 155
+[16-Dec-2018 18:19:05 UTC] WordPress-Datenbank-Fehler Server shutdown in progress für Abfrage UPDATE `wp_options` SET `option_value` = 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/de_DE/wordpress-5.0.1.zip\";s:6:\"locale\";s:5:\"de_DE\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/de_DE/wordpress-5.0.1.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.0.1\";s:7:\"version\";s:5:\"5.0.1\";s:11:\"php_version\";s:5:\"5.2.4\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1544984345;s:15:\"version_checked\";s:5:\"5.0.1\";s:12:\"translations\";a:0:{}}', `autoload` = 'no' WHERE `option_name` = '_site_transient_update_core' von include('phar:///usr/local/bin/wp/php/boot-phar.php'), include('phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php'), WP_CLI\bootstrap, WP_CLI\Bootstrap\LaunchRunner->process, WP_CLI\Runner->start, WP_CLI\Runner->_run_command_and_exit, WP_CLI\Runner->run_command, WP_CLI\Dispatcher\Subcommand->invoke, call_user_func, WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}, call_user_func, Core_Command->check_update, Core_Command->get_updates, wp_version_check, set_site_transient, update_site_option, update_network_option, update_option
+[17-Dec-2018 05:38:07 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-admin/includes/translation-install.php on line 65
+[17-Dec-2018 06:14:39 UTC] PHP Warning:  Ein unerwarteter Fehler ist aufgetreten. Es scheint etwas bei WordPress.org oder mit dieser Serverkonfiguration nicht zu stimmen. Sollte das Problem weiter bestehen, nutze bitte die <a href="https://de.wordpress.org/hilfe/">Support-Foren</a>. (WordPress konnte keine sichere Verbindung zu WordPress.org herstellen. Bitte kontaktiere deinen Server-Administrator.) in /app/public/wp-includes/update.php on line 529

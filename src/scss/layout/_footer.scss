@@ -1,0 +1,17 @@
+.site-footer {
+	background: $black;
+	color: $white;
+	font-size: 80%;
+	
+	small {
+		line-height: 1.1;
+		display: inline-block;
+	}
+
+	p {
+		padding: 0 1rem;
+		&.no-padding {
+			padding: 0;
+		}
+	}
+}

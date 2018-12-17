@@ -1,0 +1,28 @@
+.search-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+	> input, label, label input {
+		margin: 0 !important;
+		height: rem-calc(40);
+	}
+	.search-submit {
+		flex: 1;
+	}
+}
+
+.newsletter-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+	> input, label, label input {
+		margin: 0 !important;
+		height: rem-calc(25);
+		font-size: rem-calc(14);
+	}
+	.button {
+		flex: 1;
+	}
+}
