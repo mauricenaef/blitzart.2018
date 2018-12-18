@@ -29,6 +29,6 @@ INSERT INTO `wp_usermeta` VALUES
 (25,1,"managenav-menuscolumnshidden","a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}"),
 (26,1,"metaboxhidden_nav-menus","a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}"),
 (27,1,"nav_menu_recently_edited","2"),
-(29,1,"closedpostboxes_page","a:1:{i:0;s:10:\"wpseo_meta\";}"),
-(30,1,"metaboxhidden_page","a:1:{i:0;s:35:\"carbon_fields_container_seiten_meta\";}"),
+(29,1,"closedpostboxes_page","a:0:{}"),
+(30,1,"metaboxhidden_page","a:0:{}"),
 (31,1,"show_try_gutenberg_panel","0");

@@ -42,7 +42,7 @@ add_filter( 'wp_page_menu_args', 'home_page_menu_item' );
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package themeName
+ * @package blitzart
  */
 
 if ( ! function_exists( 'blitzart_setup' ) ) :
@@ -58,9 +58,9 @@ if ( ! function_exists( 'blitzart_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Fritz Blanke, use a find and replace
-		 * to change 'themeName' to the name of your theme in all the template files.
+		 * to change 'blitzart' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'themeName', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'blitzart', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -79,12 +79,17 @@ if ( ! function_exists( 'blitzart_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-
+		set_post_thumbnail_size(150, 150, true);
+		add_image_size('mini', 50, 50);
+		add_image_size('portrait', 350, 350, true);
+		add_image_size('portrait_large', 700, false);
+		add_image_size('hero', 1600, 900, true);
+		add_image_size('gallery_item', 480, false);
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( 
 			array(
-				'primary' => esc_html__( 'Hauptnavigation', 'themeName' ),
-				'footer' => esc_html__( 'Fusszeile', 'themeName' ),
+				'primary' => esc_html__( 'Hauptnavigation', 'blitzart' ),
+				'footer' => esc_html__( 'Fusszeile', 'blitzart' ),
 			) 
 		);
 
@@ -128,49 +133,49 @@ if ( ! function_exists( 'blitzart_setup' ) ) :
 		// Add support for custom color scheme.
 		add_theme_support( 'editor-color-palette', array(
 			array(
-				'name'  => __( 'Strong Blue', 'themeName' ),
+				'name'  => __( 'Strong Blue', 'blitzart' ),
 				'slug'  => 'strong-blue',
-				'color' => '#0073aa',
+				'color' => 'hsl(207, 66%, 19%)',
 			),
 			array(
-				'name'  => __( 'Lighter Blue', 'themeName' ),
+				'name'  => __( 'Lighter Blue', 'blitzart' ),
 				'slug'  => 'lighter-blue',
-				'color' => '#229fd8',
+				'color' => 'hsl(207, 66%, 60%)',
 			),
 			array(
-				'name'  => __( 'Very Light Gray', 'themeName' ),
-				'slug'  => 'very-light-gray',
-				'color' => '#eee',
+				'name'  => __( 'Light Gray', 'blitzart' ),
+				'slug'  => 'light-gray',
+				'color' => 'hsl(0, 0%, 60%)',
 			),
 			array(
-				'name'  => __( 'Very Dark Gray', 'themeName' ),
+				'name'  => __( 'Very Dark Gray', 'blitzart' ),
 				'slug'  => 'very-dark-gray',
-				'color' => '#444',
+				'color' => 'hsl(0, 0%, 25%)',
 			),
 		) );
 		// Adds support for editor font sizes.
 		add_theme_support( 'editor-font-sizes', array(
 			array(
-				'name'      => __( 'small', 'themeName' ),
-				'shortName' => __( 'S', 'themeName' ),
-				'size'      => 12,
+				'name'      => __( 'small', 'blitzart' ),
+				'shortName' => __( 'S', 'blitzart' ),
+				'size'      => 14,
 				'slug'      => 'small'
 			),
 			array(
-				'name'      => __( 'regular', 'themeName' ),
-				'shortName' => __( 'M', 'themeName' ),
+				'name'      => __( 'regular', 'blitzart' ),
+				'shortName' => __( 'M', 'blitzart' ),
 				'size'      => 16,
 				'slug'      => 'regular'
 			),
 			array(
-				'name'      => __( 'large', 'themeName' ),
-				'shortName' => __( 'L', 'themeName' ),
+				'name'      => __( 'large', 'blitzart' ),
+				'shortName' => __( 'L', 'blitzart' ),
 				'size'      => 20,
 				'slug'      => 'large'
 			),
 			array(
-				'name'      => __( 'larger', 'themeName' ),
-				'shortName' => __( 'XL', 'themeName' ),
+				'name'      => __( 'larger', 'blitzart' ),
+				'shortName' => __( 'XL', 'blitzart' ),
 				'size'      => 24,
 				'slug'      => 'larger'
 			)
@@ -203,9 +208,9 @@ add_action( 'after_setup_theme', 'blitzart_setup' );
  */
 function blitzart_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'themeName' ),
+		'name'          => esc_html__( 'Sidebar', 'blitzart' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'themeName' ),
+		'description'   => esc_html__( 'Add widgets here.', 'blitzart' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h4 class="widget-title">',
@@ -258,7 +263,7 @@ function blitzart_gallery_style($css) {
 function blitzart_scripts_and_styles() {
   global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
   if (!is_admin()) {
-	// remove themeName styles cause we add rhem ourselfs
+	// remove blitzart styles cause we add rhem ourselfs
 	//wp_dequeue_style( 'wp-block-library' );
 	wp_deregister_script( 'wp-embed' );
 
@@ -362,6 +367,9 @@ require get_template_directory() . '/inc/admin-cmb.php';
  */
 require get_template_directory() .  '/inc/admin-portfolio-stories.php';
 require get_template_directory() .  '/inc/admin-portfolio-gallerie.php';
-
+/**
+ * Sections
+ */
+//require get_template_directory() .  '/inc/admin-galerie.php';
 
 

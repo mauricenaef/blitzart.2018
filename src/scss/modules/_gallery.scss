@@ -1,0 +1,20 @@
+.wp-block-gallery {
+    margin: 0;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.grid-gallery-small {
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-left: 10px;
+    .items {
+
+    }
+}

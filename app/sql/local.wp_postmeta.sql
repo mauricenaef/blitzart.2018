@@ -3,7 +3,7 @@
 /*!40103 SET TIME_ZONE='+00:00' */;
 INSERT INTO `wp_postmeta` VALUES
 (1,2,"_wp_page_template","default"),
-(2,2,"_edit_lock","1541931930:1"),
+(2,2,"_edit_lock","1545026972:1"),
 (3,2,"_edit_last","1"),
 (6,6,"_edit_lock","1541928086:1"),
 (7,6,"_oembed_85fbb30061e6c2be3e051d8ebd59db5e","<iframe src=\"https://player.vimeo.com/video/22439234?app_id=122963\" width=\"525\" height=\"295\" frameborder=\"0\" title=\"The Mountain\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>"),
@@ -56,9 +56,12 @@ INSERT INTO `wp_postmeta` VALUES
 (161,66,"roles_access","a:3:{i:0;s:13:\"administrator\";i:1;s:6:\"editor\";i:2;s:6:\"author\";}"),
 (162,66,"users_access","a:0:{}"),
 (181,74,"_wp_attached_file","2018/11/basic-1-018-compass.svg"),
-(227,2,"_home_video_url",""),
-(228,2,"_home_intro_icon",""),
-(229,2,"_home_gallery|||0|_empty",""),
 (237,17,"_edit_lock","1541926561:1"),
 (238,17,"_edit_last","1"),
-(239,17,"_wp_attachment_backup_sizes","a:5:{s:9:\"full-orig\";a:3:{s:5:\"width\";i:1920;s:6:\"height\";i:1200;s:4:\"file\";s:11:\"69gA5SV.jpg\";}s:14:\"thumbnail-orig\";a:4:{s:4:\"file\";s:19:\"69gA5SV-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"medium-orig\";a:4:{s:4:\"file\";s:19:\"69gA5SV-300x188.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:188;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:17:\"medium_large-orig\";a:4:{s:4:\"file\";s:19:\"69gA5SV-768x480.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:480;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:10:\"large-orig\";a:4:{s:4:\"file\";s:20:\"69gA5SV-1024x640.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:640;s:9:\"mime-type\";s:10:\"image/jpeg\";}}");
+(239,17,"_wp_attachment_backup_sizes","a:5:{s:9:\"full-orig\";a:3:{s:5:\"width\";i:1920;s:6:\"height\";i:1200;s:4:\"file\";s:11:\"69gA5SV.jpg\";}s:14:\"thumbnail-orig\";a:4:{s:4:\"file\";s:19:\"69gA5SV-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"medium-orig\";a:4:{s:4:\"file\";s:19:\"69gA5SV-300x188.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:188;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:17:\"medium_large-orig\";a:4:{s:4:\"file\";s:19:\"69gA5SV-768x480.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:480;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:10:\"large-orig\";a:4:{s:4:\"file\";s:20:\"69gA5SV-1024x640.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:640;s:9:\"mime-type\";s:10:\"image/jpeg\";}}"),
+(240,2,"_home_video_url",""),
+(241,2,"_home_intro_icon",""),
+(242,2,"_home_gallery|||0|_empty",""),
+(243,97,"_home_video_url",""),
+(244,97,"_home_intro_icon",""),
+(245,97,"_home_gallery|||0|_empty","");

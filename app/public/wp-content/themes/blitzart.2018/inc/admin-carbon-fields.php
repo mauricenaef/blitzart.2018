@@ -3,17 +3,26 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-// Google Maps API
-add_filter( 'carbon_fields_map_field_api_key', 'crb_get_gmaps_api_key' );
-function crb_get_gmaps_api_key( $current_key ) {
-    return 'api';
-}
 
 // Front Page Fields
+add_action( 'carbon_fields_register_fields', 'custom_carbon_fields_story' );
+function custom_carbon_fields_story() {
+    Container::make( 'post_meta', 'Galerie' )
+    ->where( 'post_type', '=', 'story' )
+    ->set_context( 'side' )
+    ->add_fields( array(
+        Field::make( 'media_gallery', 'media_gallery', 'Bilder Galerie' )
+        ->set_type( array( 'image' ) )
+        ->set_duplicates_allowed( false ),
+    ));
+}
+
+// Stories Field
 add_action( 'carbon_fields_register_fields', 'custom_carbon_fields_front_page' );
 function custom_carbon_fields_front_page() {
     Container::make( 'post_meta', 'Seiten Meta' )
     ->where( 'post_id', '=', get_option( 'page_on_front' ) )
+    ->set_context( 'side' )
     ->add_fields( array(
         Field::make( 'text', 'home_video_url', 'Intro Video URL' ),
         Field::make( 'image', 'home_intro_icon', 'Bild / Icon' ),
@@ -22,6 +31,8 @@ function custom_carbon_fields_front_page() {
         ->set_duplicates_allowed( false ),
     ));
 }
+
+
 
 // Rearange Angebote Columns
 if ( ! function_exists( 'is_plugin_active' ) )

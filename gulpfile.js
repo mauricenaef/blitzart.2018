@@ -31,14 +31,16 @@ var fs = require('fs');
 Theme Name
 *********************/
 
-var themeName = 'blitzart.2018';
+var blitzart = 'blitzart.2018';
 
 /*********************
 Header and Footer scripts
 *********************/
 
 var headerJS = [
+	'node_modules/webfontloader/webfontloader.js',
 	'node_modules/jquery/dist/jquery.js',
+	'node_modules/lightgallery/dist/js/lightgallery-all.js',
 	'src/js/header/**'
 ];
 var footerJS = [
@@ -66,7 +68,7 @@ gulp.task('build-dev', [
 		port: '8080'
 	}, function () {
 		browserSync({
-			proxy : 'http://blitz.development'
+			proxy : 'https://blitz.development'
 		});
 	});
 }
@@ -93,18 +95,18 @@ gulp.task('cleanup', function () {
 });
 
 gulp.task('dist', function () {
-	gulp.src('app/public/wp-content/themes/' + themeName + '/**')
-		.pipe(gulp.dest('dist/themes/' + themeName))
+	gulp.src('app/public/wp-content/themes/' + blitzart + '/**')
+		.pipe(gulp.dest('dist/themes/' + blitzart))
 });
 
 gulp.task('copy-theme-dev', function () {
 	gulp.src("src/theme/**")
-		.pipe(gulp.dest('app/public/wp-content/themes/' + themeName));
+		.pipe(gulp.dest('app/public/wp-content/themes/' + blitzart));
 });
 
 gulp.task('copy-theme-prod', function () {
 	gulp.src("src/theme/**")
-		.pipe(gulp.dest('dist/themes/' + themeName))
+		.pipe(gulp.dest('dist/themes/' + blitzart))
 });
 
 gulp.task('style-dev', function () {
@@ -115,8 +117,8 @@ gulp.task('style-dev', function () {
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
-		.pipe(sourcemaps.write('../' + themeName))
-		.pipe(gulp.dest('app/public/wp-content/themes/' + themeName))
+		.pipe(sourcemaps.write('../' + blitzart))
+		.pipe(gulp.dest('app/public/wp-content/themes/' + blitzart))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
@@ -128,8 +130,8 @@ gulp.task('login-style-dev', function () {
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
-		.pipe(sourcemaps.write('../' + themeName))
-		.pipe(gulp.dest('app/public/wp-content/themes/' + themeName + '/inc/style'))
+		.pipe(sourcemaps.write('../' + blitzart))
+		.pipe(gulp.dest('app/public/wp-content/themes/' + blitzart + '/inc/style'))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 });
 gulp.task('admin-style-dev', function () {
@@ -140,8 +142,8 @@ gulp.task('admin-style-dev', function () {
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
-		.pipe(sourcemaps.write('../' + themeName))
-		.pipe(gulp.dest('app/public/wp-content/themes/' + themeName + '/inc/style'))
+		.pipe(sourcemaps.write('../' + blitzart))
+		.pipe(gulp.dest('app/public/wp-content/themes/' + blitzart + '/inc/style'))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
@@ -152,7 +154,7 @@ gulp.task('editor-style-dev', function () {
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
-		.pipe(gulp.dest('app/public/wp-content/themes/' + themeName))
+		.pipe(gulp.dest('app/public/wp-content/themes/' + blitzart))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
@@ -165,7 +167,7 @@ gulp.task('style-prod', function () {
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}))
-		.pipe(gulp.dest('dist/themes/' + themeName))
+		.pipe(gulp.dest('dist/themes/' + blitzart))
 });
 
 gulp.task('login-style-prod', function () {
@@ -177,7 +179,7 @@ gulp.task('login-style-prod', function () {
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}))
-		.pipe(gulp.dest('dist/themes/' + themeName + '/inc/style'))
+		.pipe(gulp.dest('dist/themes/' + blitzart + '/inc/style'))
 });
 
 gulp.task('admin-style-prod', function () {
@@ -189,8 +191,8 @@ gulp.task('admin-style-prod', function () {
 			browsers: ['last 2 versions'],
 			outputStyle: 'compressed'
 		}))
-		.pipe(sourcemaps.write('../' + themeName))
-		.pipe(gulp.dest('dist/themes/' + themeName + '/inc/style'))
+		.pipe(sourcemaps.write('../' + blitzart))
+		.pipe(gulp.dest('dist/themes/' + blitzart + '/inc/style'))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
@@ -202,7 +204,7 @@ gulp.task('editor-style-prod', function () {
 			browsers: ['last 2 versions'],
 			outputStyle: 'compressed'
 		}))
-		.pipe(gulp.dest('dist/themes/' + themeName))
+		.pipe(gulp.dest('dist/themes/' + blitzart))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
@@ -217,7 +219,7 @@ gulp.task('header-scripts-dev', function () {
 		.pipe(sourcemaps.init())
 		.pipe(concat('header-bundle.js'))
 		.pipe(sourcemaps.write("."))
-		.pipe(gulp.dest('app/public/wp-content/themes/' + themeName + '/js'));
+		.pipe(gulp.dest('app/public/wp-content/themes/' + blitzart + '/js'));
 });
 
 gulp.task('header-scripts-prod', function () {
@@ -225,7 +227,7 @@ gulp.task('header-scripts-prod', function () {
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(concat('header-bundle.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/themes/' + themeName + '/js'));
+		.pipe(gulp.dest('dist/themes/' + blitzart + '/js'));
 });
 
 gulp.task('footer-scripts-dev', function () {
@@ -237,7 +239,7 @@ gulp.task('footer-scripts-dev', function () {
 		}))
 		.pipe(concat('footer-bundle.js'))
 		.pipe(sourcemaps.write("."))
-		.pipe(gulp.dest('app/public/wp-content/themes/' + themeName + '/js'));
+		.pipe(gulp.dest('app/public/wp-content/themes/' + blitzart + '/js'));
 });
 
 gulp.task('footer-scripts-prod', function () {
@@ -248,7 +250,7 @@ gulp.task('footer-scripts-prod', function () {
 		}))
 		.pipe(concat('footer-bundle.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/themes/' + themeName + '/js'));
+		.pipe(gulp.dest('dist/themes/' + blitzart + '/js'));
 });
 
 var onError = function (err) {
@@ -262,12 +264,12 @@ Fonts
 
 gulp.task('copy-fonts-dev', () => {
 	gulp.src('src/theme/fonts/**')
-		.pipe(gulp.dest('app/public/wp-content/themes/' + themeName + '/fonts'))
+		.pipe(gulp.dest('app/public/wp-content/themes/' + blitzart + '/fonts'))
 });
 
 gulp.task('copy-fonts-prod', () => {
 	gulp.src('src/theme/fonts/**')
-		.pipe(gulp.dest('dist/themes/' + themeName + '/fonts'))
+		.pipe(gulp.dest('dist/themes/' + blitzart + '/fonts'))
 });
 /*********************
 Images
@@ -283,7 +285,7 @@ gulp.task('process-images', ['svg-icons'], function() {
     ],{
     	verbose: true
     }))
-    .pipe(gulp.dest('dist/themes/' + themeName + '/images'));
+    .pipe(gulp.dest('dist/themes/' + blitzart + '/images'));
 });
 
 

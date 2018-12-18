@@ -1,0 +1,15 @@
+.has-text-color {
+    &.has-light-gray-color {
+        color: $medium-gray;
+    }
+}
+
+.no-padding {
+    padding: 0;
+}
+.small-margin-bottom {
+    margin-bottom: .75em;
+}
+.no-margin {
+    margin: 0;
+}

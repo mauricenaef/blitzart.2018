@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package themeName
+ * @package blitzart
  */
 
 ?>
@@ -25,7 +25,7 @@
 
 <body <?php body_class('site'); ?>>
 
-	<a class="skip-link show-for-sr" href="#content"><?php esc_html_e( 'Skip to content', 'themeName' ); ?></a>
+	<a class="skip-link show-for-sr" href="#content"><?php esc_html_e( 'Skip to content', 'blitzart' ); ?></a>
 
 	<header class="site-header" role="banner">
 		<div class="grid-container grid-x grid-padding-x grid-padding-y align-bottom">
@@ -36,7 +36,7 @@
 			</div><!-- .site-branding -->
 			<div class="auto cell">
 				<nav id="site-navigation" class="site-nav">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'themeName' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'blitzart' ); ?></button>
 					<?php
 						wp_nav_menu( array(
 							'menu_class'     => 'main-nav menu',

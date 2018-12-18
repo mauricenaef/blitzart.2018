@@ -1,7 +1,22 @@
-const test = 'Babel is doing the job. Test';
+// Go Back Button
+function goBack() { 
+	window.history.back(); 
+}
 
 $(window).on('load', function () {
-	console.log(test);
+	// Lightbox
+	if ($(".gallery, .images, .wp-block-gallery, .wp-block-image").length > 0) {
+		$(".gallery, .images, .wp-block-gallery, .wp-block-image").lightGallery({
+			selector: "a",
+			share: false,
+			thumbnail: true,
+			download: true,
+			controls: true,
+			html: true,
+			getCaptionFromTitleOrAlt: true,
+			hash: false
+		});
+	}
 });
 
 
@@ -23,13 +38,12 @@ $(window).on('load', function () {
 			if (scroll >= 50) {
 				header.addClass('scrolled');
 				shadow.addClass('scrolled');
-				search.addClass('scrolled');
 			} else {
 				header.removeClass('scrolled');
 				shadow.removeClass('scrolled');
-				search.removeClass('scrolled');
 			}
 		});
 
 	}, 2000);
 });
+

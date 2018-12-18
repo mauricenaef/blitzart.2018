@@ -31,6 +31,7 @@ function custom_post_type_gallery() {
         'show_in_nav_menus'     => true,
         'menu_icon'             => 'dashicons-images-alt2',
 		'show_in_menu'          => true,
+		'show_in_rest'			=> true,
 		'query_var'             => true,
 		'rewrite'               => true,
 		'capability_type'       => 'post',
@@ -106,4 +107,50 @@ function blitzart_gallery_meta() {
 		),
 		'preview_size' => 'thumbnail', // Image size to use when previewing in the admin.
 	) );
+}
+
+
+/*
+* Galerie Secrtion
+*/
+function blitzart_galerie() {
+
+    global $post;
+
+	$args = array(
+		'post_type' 	=> array( 'portfolio_gallery' ),
+		'numberposts'	=> 12,
+		'order'			=> 'ASC',
+		'orderby'		=> 'menu_order'
+    );
+    
+    $portfolio_gallery = get_posts($args);
+	
+	if ($portfolio_gallery) {
+
+    ?>
+    <div class="grid-container grid-x section-padding">
+        <div class="cell">
+            <h3 class="header-title">Galerie</h3>
+        </div>
+        <div class="grid-x grid-padding-x grid-padding-y small-up-2 medium-up-6 cell gallery">
+
+            <?php 
+            foreach ($portfolio_gallery as $item) {
+				
+				$full = get_post_meta( $item->ID, '_thumbnail', true );
+				$thumbnail_id = get_post_meta( $item->ID, '_thumbnail_id', true );
+				$thumbnail = wp_get_attachment_image_src( $thumbnail_id, 'portrait', "", "" );
+				
+                echo '<div class="cell">';
+				echo '<a href="' . $full . '">';
+                echo '<img src="' . $thumbnail[0] . '">';
+                echo '</a>';
+                echo '</div>';
+            }
+            ?>
+        </div>
+    </div>
+    <?php
+    }
 }

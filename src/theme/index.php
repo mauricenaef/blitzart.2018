@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package themeName
+ * @package blitzart
  */
 
 get_header(); ?>

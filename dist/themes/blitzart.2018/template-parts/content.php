@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package themeName
+ * @package blitzart
  */
 
 ?>
@@ -31,7 +31,7 @@
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="show-for-sr"> "%s"</span>', 'themeName' ),
+					__( 'Continue reading<span class="show-for-sr"> "%s"</span>', 'blitzart' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -42,7 +42,7 @@
 			) );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'themeName' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'blitzart' ),
 				'after'  => '</div>',
 			) );
 		?>

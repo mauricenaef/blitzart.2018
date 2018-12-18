@@ -43,6 +43,7 @@
 		"gulp-unzip": "^0.2.0",
 		"gulp-util": "^3.0.8",
 		"gulp-zip": "^4.0.0",
+		"lightgallery": "^1.6.11",
 		"normalize.css": "^7.0.0",
 		"nprogress": "^0.2.0",
 		"postcss-cssnext": "^3.0.2",

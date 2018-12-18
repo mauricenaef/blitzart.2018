@@ -75,7 +75,7 @@ The name of the template has to be changed in the Gulp configuration file:
 /* -------------------------------------------------------------------------------------------------
 Theme Name
  ------------------------------------------------------------------------------------------------- */
-var themeName = 'themeName';
+var blitzart = 'blitzart';
 ```
 
 Adding third party JavaScript libraries is as simple as installing them with NPM Node Package Manager and including the source files in the configuration:
