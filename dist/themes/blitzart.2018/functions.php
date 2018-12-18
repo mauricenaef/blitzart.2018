@@ -79,7 +79,12 @@ if ( ! function_exists( 'blitzart_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-
+		set_post_thumbnail_size(150, 150, true);
+		add_image_size('mini', 50, 50);
+		add_image_size('portrait', 350, 350, true);
+		add_image_size('portrait_large', 700, false);
+		add_image_size('hero', 1600, 900, true);
+		add_image_size('gallery_item', 480, false);
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( 
 			array(
@@ -130,22 +135,22 @@ if ( ! function_exists( 'blitzart_setup' ) ) :
 			array(
 				'name'  => __( 'Strong Blue', 'blitzart' ),
 				'slug'  => 'strong-blue',
-				'color' => '#0073aa',
+				'color' => 'hsl(207, 66%, 19%)',
 			),
 			array(
 				'name'  => __( 'Lighter Blue', 'blitzart' ),
 				'slug'  => 'lighter-blue',
-				'color' => '#229fd8',
+				'color' => 'hsl(207, 66%, 60%)',
 			),
 			array(
-				'name'  => __( 'Very Light Gray', 'blitzart' ),
-				'slug'  => 'very-light-gray',
-				'color' => '#eee',
+				'name'  => __( 'Light Gray', 'blitzart' ),
+				'slug'  => 'light-gray',
+				'color' => 'hsl(0, 0%, 60%)',
 			),
 			array(
 				'name'  => __( 'Very Dark Gray', 'blitzart' ),
 				'slug'  => 'very-dark-gray',
-				'color' => '#444',
+				'color' => 'hsl(0, 0%, 25%)',
 			),
 		) );
 		// Adds support for editor font sizes.
@@ -153,7 +158,7 @@ if ( ! function_exists( 'blitzart_setup' ) ) :
 			array(
 				'name'      => __( 'small', 'blitzart' ),
 				'shortName' => __( 'S', 'blitzart' ),
-				'size'      => 12,
+				'size'      => 14,
 				'slug'      => 'small'
 			),
 			array(
@@ -362,6 +367,9 @@ require get_template_directory() . '/inc/admin-cmb.php';
  */
 require get_template_directory() .  '/inc/admin-portfolio-stories.php';
 require get_template_directory() .  '/inc/admin-portfolio-gallerie.php';
-
+/**
+ * Sections
+ */
+//require get_template_directory() .  '/inc/admin-galerie.php';
 
 

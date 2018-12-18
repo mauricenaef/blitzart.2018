@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="25px" viewBox="0 0 12 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_up</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Work" transform="translate(-194.000000, -2091.000000)" fill="#003554">
+            <g id="Group-3" transform="translate(194.025196, 2091.500000)">
+                <g id="arrow_up" transform="translate(0.685921, 0.312431)">
+                    <path d="M10.854,5.147 L5.855,0.147 L5.692,0.039 C5.57,-0.012 5.432,-0.012 5.31,0.039 L5.147,0.147 L0.148,5.147 C-0.047,5.342 -0.047,5.659 0.148,5.854 C0.343,6.049 0.66,6.049 0.855,5.854 L5,1.707 L5,23.5 C5,23.776 5.224,24 5.5,24 C5.776,24 6,23.776 6,23.5 L6,1.707 L10.146,5.853 C10.244,5.951 10.372,6 10.5,6 C10.628,6 10.756,5.951 10.854,5.853 C11.049,5.658 11.049,5.342 10.854,5.147 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

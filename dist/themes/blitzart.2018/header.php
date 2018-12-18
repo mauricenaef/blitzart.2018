@@ -29,14 +29,13 @@
 
 	<header class="site-header" role="banner">
 		<div class="grid-container grid-x grid-padding-x grid-padding-y align-bottom">
-			<div class="site-branding small-8 medium-1 cell">
+			<div class="site-branding small-4 medium-2 cell">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home">
 					<?php the_custom_logo(); ?>
 				</a>
 			</div><!-- .site-branding -->
 			<div class="auto cell">
 				<nav id="site-navigation" class="site-nav">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'blitzart' ); ?></button>
 					<?php
 						wp_nav_menu( array(
 							'menu_class'     => 'main-nav menu',
@@ -47,5 +46,4 @@
 			</div>
 		</div>
 	</header>
-
 	<div id="content" class="site-content">
