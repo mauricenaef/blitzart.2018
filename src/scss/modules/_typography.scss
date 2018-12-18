@@ -37,7 +37,11 @@ blockquote {
     font-weight: 300;
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    @include breakpoint(medium up) {
+        margin-bottom: 2rem;
+    }
     .icon {
         margin-right: .5rem;
     }

@@ -50,13 +50,21 @@ body {overflow-x: hidden;}
   }
 }
 
-.site-content {
-  padding-top: 2rem;
+@include breakpoint(medium up) {
+  .site-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
+
 .section-padding {
-  padding-top: 4rem;
-  padding-bottom: 4rem; 
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+  @include breakpoint(medium up) {
+    padding-top: 4rem;
+    padding-bottom: 4rem; 
+  }
 }
 
 .page-padding {

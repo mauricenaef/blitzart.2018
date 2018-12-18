@@ -9,7 +9,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="section-padding">
+	<div id="primary" class="">
+		<header class="grid-container grid-x">
+			<h1 class="entry-title header-title">Work</h1>
+		</header>
 		<main id="main" class="site-main">
 
 		<?php

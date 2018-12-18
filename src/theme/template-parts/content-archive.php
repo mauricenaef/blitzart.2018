@@ -20,22 +20,7 @@
 		 ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content medium-8 cell">
-		<?php
-			the_content( sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Weiter lesen<span class="show-for-sr"> "%s"</span>', 'blitzart' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			) );
-		?>
-	</div><!-- .entry-content -->
+	
 	<div class="gallery-container grid-x cell">
 		<div class="medium-8 cell">
 			<figure class="hero images">
@@ -54,7 +39,7 @@
 					echo '<a href="' . wp_get_attachment_image_url( $attachment_id, 'full', '' ) . '" class="items">';
 					echo wp_get_attachment_image( $attachment_id, 'portrait', '', array( "class" => "item") );
 					echo '</a>';
-					if($i == '3') {
+					if($i == '4') {
 						break;
 					}
 				}
