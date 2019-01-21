@@ -5,7 +5,7 @@ use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
 // Default options page
-add_action( 'carbon_fields_register_fields', 'custom_carbon_fields_settings' );
+//add_action( 'carbon_fields_register_fields', 'custom_carbon_fields_settings' );
 function custom_carbon_fields_settings() {
 
     $basic_options_container = Container::make( 'theme_options', 'Basic Options' )

@@ -115,6 +115,7 @@ function geburtschaft_remove_menus() {
 
 	remove_menu_page( 'link-manager.php' );
 	remove_menu_page( 'edit-comments.php' );
+	remove_menu_page( 'edit.php' );
 	
 	if (!current_user_can('edit_users')) {
 		remove_menu_page( 'tools.php' );

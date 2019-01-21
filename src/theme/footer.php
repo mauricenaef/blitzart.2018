@@ -17,7 +17,7 @@
 			<div class="small-6 medium-3 cell">
 				<p>blitzartgrafik<br />Steinberggasse 54 <br/>8400 Winterthur</p>
 				<p><a href="tel:+41 76 343 72 23">+41 76 343 72 23</a><br /><a href="mailto:info@blitzart.ch">info@blitzart.ch</a></p>
-				<p class="copyright">© <?php bloginfo( 'name' ); ?> - <?php echo date('Y'); ?></p>
+				<p class="copyright">© <?php bloginfo( 'name' ); ?> | 2004 - <?php echo date('Y'); ?></p>
 			</div>
 			<div class="small-6 medium-3 cell">
 			<?php wp_nav_menu( array( 'theme_location' => 'footer' ,'menu_class' => 'menu vertical')); ?>
