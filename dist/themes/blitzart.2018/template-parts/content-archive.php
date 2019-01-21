@@ -11,13 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid-container grid-x align-middle'); ?>>
 	<header class="entry-header medium-8 cell">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class=""><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-		 ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' );  ?>
 	</header><!-- .entry-header -->
 
 	
