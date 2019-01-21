@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="grid-container grid-x grid-padding-x section-padding">
+	<div id="primary" class="grid-container grid-x section-padding">
 		<a href="#" onclick="goBack()" class="cell go-back"><?php svg_icon('arrow_left'); ?> Übersicht</a>
 		<main id="main" class="site-main medium-4 cell">
 

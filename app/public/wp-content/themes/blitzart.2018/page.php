@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="grid-container grid-x grid-padding-y">
+	<div id="primary" class="grid-container grid-x">
 		<main id="main" class="site-main medium-8 cell">
 
 			<?php

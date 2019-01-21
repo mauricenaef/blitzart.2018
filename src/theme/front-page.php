@@ -14,7 +14,7 @@
 get_header(); ?>
 
 <div id="primary" class="grid-container-full ">
-	<main id="main" class="grid-container grid-x grid-padding-y align-middle">
+	<main id="main" class="grid-container grid-x align-middle">
 		<?php
 		while ( have_posts() ) : the_post();
 
