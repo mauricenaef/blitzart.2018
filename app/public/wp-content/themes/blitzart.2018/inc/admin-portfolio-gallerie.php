@@ -131,7 +131,7 @@ function blitzart_galerie() {
     ?>
     <div class="grid-container grid-x section-padding">
         <div class="cell">
-            <h3 class="header-title">Work Samples</h3>
+            <h3 class="header-title">Referenzen</h3>
         </div>
         <div class="grid-x grid-padding-x grid-padding-y small-up-2 medium-up-6 cell gallery">
 
