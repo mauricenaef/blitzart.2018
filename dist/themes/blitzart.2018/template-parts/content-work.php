@@ -9,7 +9,7 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid-container grid-x grid-padding-y section-padding'); ?>>
-	<section class="site-main medium-4 cell">
+	<section class="site-main medium-5 large-4 cell">
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
@@ -22,7 +22,7 @@
 			<?php blitzart_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	</section>			
-	<aside class="medium-8 large-7 large-offset-1 cell">
+	<aside class="medium-5 medium-offset-1 large-6 large-offset-2 cell">
 		<figure class="hero images">
 			<?php $featured_img_url = get_the_post_thumbnail_url($post->ID, 'full'); ?>
 			<a href="<?php echo $featured_img_url; ?>" >
