@@ -1,3 +1,10 @@
 .site-header {
-	padding: 1rem 0 .5rem;
+	padding: 1rem .5rem 1rem;
+	margin: 0 -.5rem 2rem;
+	@include breakpoint(medium up) {
+		margin-bottom: 3rem;
+	}
+	@include breakpoint(small only) {
+		background-color: $light-gray;
+	}
 }

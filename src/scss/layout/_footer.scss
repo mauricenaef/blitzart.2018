@@ -1,3 +1,6 @@
 .site-footer {
-	margin-top: 1rem; 
+	margin-top: 2rem; 
+	@include breakpoint(medium up) {
+		margin-top: 3rem; 
+	}
 }

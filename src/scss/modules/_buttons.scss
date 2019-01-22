@@ -1,3 +1,11 @@
 input[type="submit"] {
 	@include button;	
 }
+.edit-link {
+	.icon {
+		margin-left: 1em;
+	}
+}
+.post-edit-link {
+	color: get-color(warning);
+}

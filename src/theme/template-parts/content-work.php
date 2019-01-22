@@ -8,7 +8,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('grid-container grid-x grid-padding-y section-padding'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('grid-container grid-x grid-padding-y article-padding'); ?>>
 	<section class="site-main medium-5 large-4 cell">
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

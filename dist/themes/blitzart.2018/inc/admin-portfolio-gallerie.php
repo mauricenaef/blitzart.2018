@@ -133,7 +133,7 @@ function blitzart_galerie() {
         <div class="cell">
             <h3 class="header-title">Referenzen</h3>
         </div>
-        <div class="grid-x grid-padding-x grid-padding-y small-up-2 medium-up-6 cell gallery">
+        <div class="grid-x grid-padding-x grid-padding-y small-up-3 medium-up-6 large-up-8 cell gallery">
 
             <?php 
             foreach ($portfolio_gallery as $item) {

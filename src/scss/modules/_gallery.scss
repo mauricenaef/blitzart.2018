@@ -2,6 +2,23 @@
     margin: 0;
 }
 
+.gallery {
+    a {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        &:hover,&:focus {
+            img {
+                filter: grayscale(0);
+            }
+        }
+        img {
+            filter: grayscale(1);
+            transition: .3s ease-in;
+        }
+    }
+}
+
 .grid-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,7 +31,4 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     padding-left: 10px;
-    .items {
-
-    }
 }

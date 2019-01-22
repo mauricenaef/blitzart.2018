@@ -22,8 +22,21 @@
 			<div class="small-6 medium-3 cell">
 			<?php wp_nav_menu( array( 'theme_location' => 'footer' ,'menu_class' => 'menu vertical')); ?>
 			</div>
+			<div class="medium-2 medium-offset-4">
+				<a href="#top" class="cell go-back"><?php svg_icon('arrow_up'); ?> Nach oben</a>
+			</div>
 		</div>
 	</footer>
 <?php wp_footer(); ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-580778-56"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-580778-56');
+</script>
+
 </body>
 </html>

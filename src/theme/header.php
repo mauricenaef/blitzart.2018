@@ -27,7 +27,7 @@
 
 	<a class="skip-link show-for-sr" href="#content"><?php esc_html_e( 'Skip to content', 'blitzart' ); ?></a>
 
-	<header class="site-header" role="banner">
+	<header class="site-header" role="banner" id="top">
 		<div class="grid-container grid-x grid-padding-x grid-padding-y align-bottom">
 			<div class="site-branding small-4 medium-2 cell">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home">

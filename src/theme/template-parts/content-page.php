@@ -27,7 +27,7 @@
 					sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="show-for-sr">%s</span>', 'blitzart' ),
+							__( ' Bearbeiten <span class="show-for-sr">%s</span>', 'blitzart' ),
 							array(
 								'span' => array(
 									'class' => array(),
@@ -36,8 +36,8 @@
 						),
 						get_the_title()
 					),
-					'<span class="edit-link">',
-					'</span>'
+					'<span class="edit-link button secondary warning hollow tiny">',
+					get_svg_icon('pencil') . ' </span>'
 				);
 			?>
 		</footer><!-- .entry-footer -->
