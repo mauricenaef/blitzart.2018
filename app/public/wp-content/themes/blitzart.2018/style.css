@@ -3902,25 +3902,30 @@ input[type="submit"] {
 .post-edit-link {
   color: #ffae00; }
 
-.menu a {
-  font-size: 1rem; }
-  @media screen and (min-width: 40em) {
-    .menu a {
-      font-size: 1.33333rem; } }
-
-.menu .current_page_item a, .menu .current-menu-item a {
-  color: #56a0dc; }
-
-.menu.vertical a {
-  font-size: 0.88889rem;
-  font-weight: 300;
-  line-height: 1.55556rem;
-  padding-top: 0;
-  padding-bottom: 0; }
-  @media screen and (min-width: 40em) {
-    .menu.vertical a {
-      font-size: 1.11111rem;
-      line-height: 2.05556rem; } }
+.menu {
+  padding: .2rem .2rem .2rem 1rem; }
+  @media screen and (max-width: 39.9375em) {
+    .menu {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+  .menu a {
+    font-size: 1rem; }
+    @media screen and (min-width: 40em) {
+      .menu a {
+        font-size: 1.27778rem; } }
+  .menu .current_page_item a, .menu .current-menu-item a {
+    color: #56a0dc; }
+  .menu.vertical a {
+    font-size: 0.88889rem;
+    font-weight: 300;
+    line-height: 1.55556rem;
+    padding-top: 0;
+    padding-bottom: 0; }
+    @media screen and (min-width: 40em) {
+      .menu.vertical a {
+        font-size: 1.11111rem;
+        line-height: 2.05556rem; } }
 
 .event-item {
   min-height: 5rem;
@@ -4716,6 +4721,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-current {
     -webkit-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
     transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s; }
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer; }
 
 /*
 PRINT STYLESHEET

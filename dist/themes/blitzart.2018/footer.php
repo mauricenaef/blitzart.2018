@@ -27,6 +27,7 @@
 			</div>
 		</div>
 	</footer>
+	<canvas id="c"></canvas>
 <?php wp_footer(); ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-580778-56"></script>

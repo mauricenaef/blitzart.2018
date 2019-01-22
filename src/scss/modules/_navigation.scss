@@ -1,8 +1,12 @@
 .menu {
+	padding: .2rem .2rem .2rem 1rem;
+	@include breakpoint(small only) {
+		justify-content: flex-end;
+	}
 	a {
 		font-size: rem-calc(18);
 		@include breakpoint(medium up) {
-			font-size: rem-calc(24);
+			font-size: rem-calc(23);
 		}
 	}
 	.current_page_item, .current-menu-item {
