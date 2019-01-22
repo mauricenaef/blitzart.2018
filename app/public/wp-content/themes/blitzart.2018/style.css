@@ -4025,18 +4025,22 @@ input[type="submit"] {
 .wp-block-gallery {
   margin: 0; }
 
-.gallery a {
-  position: relative;
-  overflow: hidden;
-  display: block; }
-  .gallery a:hover img, .gallery a:focus img {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0); }
-  .gallery a img {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-    -webkit-transition: .3s ease-in;
-    transition: .3s ease-in; }
+.gallery {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto; }
+  .gallery a {
+    position: relative;
+    overflow: hidden;
+    display: block; }
+    .gallery a:hover img, .gallery a:focus img {
+      -webkit-filter: grayscale(0);
+              filter: grayscale(0); }
+    .gallery a img {
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1);
+      -webkit-transition: .3s ease-in;
+      transition: .3s ease-in; }
 
 .grid-gallery {
   display: grid;
