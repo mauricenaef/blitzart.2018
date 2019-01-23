@@ -29,7 +29,7 @@
 
 	<header class="site-header" role="banner" id="top">
 		<div class="grid-container grid-x grid-padding-y align-bottom">
-			<div class="site-branding small-4 medium-2 cell">
+			<div class="site-branding small-5 medium-2 cell">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home">
 					<?php the_custom_logo(); ?>
 				</a>

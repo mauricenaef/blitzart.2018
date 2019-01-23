@@ -3841,6 +3841,9 @@ blockquote {
     blockquote {
       font-size: 1.55556rem; } }
 
+.list-circle {
+  list-style-type: circle; }
+
 .header-title {
   position: relative;
   display: inline-block; }
@@ -3906,12 +3909,16 @@ input[type="submit"] {
   padding: .2rem .2rem .2rem 1rem; }
   @media screen and (max-width: 39.9375em) {
     .menu {
+      padding: .2rem;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
   .menu a {
-    font-size: 1rem; }
-    @media screen and (min-width: 40em) {
+    font-size: 0.94444rem; }
+    @media print, screen and (min-width: 40em) {
+      .menu a {
+        font-size: 1rem; } }
+    @media screen and (min-width: 64em) {
       .menu a {
         font-size: 1.27778rem; } }
   .menu .current_page_item a, .menu .current-menu-item a {
@@ -4034,13 +4041,11 @@ input[type="submit"] {
     overflow: hidden;
     display: block; }
     .gallery a:hover img, .gallery a:focus img {
-      -webkit-filter: grayscale(0);
-              filter: grayscale(0); }
+      opacity: .5; }
     .gallery a img {
-      -webkit-filter: grayscale(1);
-              filter: grayscale(1);
-      -webkit-transition: .3s ease-in;
-      transition: .3s ease-in; }
+      opacity: 1;
+      -webkit-transition: .2s ease-in;
+      transition: .2s ease-in; }
 
 .grid-gallery {
   display: grid;
@@ -4727,7 +4732,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s; }
 
 canvas {
-  display: block;
+  display: none;
   width: 100vw;
   height: 100vh;
   cursor: pointer; }
