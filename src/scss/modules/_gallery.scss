@@ -10,12 +10,12 @@
         display: block;
         &:hover,&:focus {
             img {
-                filter: grayscale(0);
+                opacity: .5;
             }
         }
         img {
-            filter: grayscale(1);
-            transition: .3s ease-in;
+            opacity: 1;            
+            transition: .2s ease-in;
         }
     }
 }
