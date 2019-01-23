@@ -35,7 +35,6 @@ function custom_post_type_stories() {
 		'description'           => __( 'Detailierte Portfolio', 'blitzart' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', ),
-		//'taxonomies'			=> array( 'Story_kategorie' ),
 		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,
@@ -45,6 +44,15 @@ function custom_post_type_stories() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'show_in_rest'			=> true,
+		'template' 				=> array(
+										array( 'core/paragraph', array(
+											'content' 		=> '2019 • Logo / Design / Briefschaften',
+											'className'		=> 'has-light-gray-color has-text-color has-small-font-size',
+										) ),
+										array( 'core/paragraph', array(
+											'placeholder' 	=> 'Projekt Beschreibung',
+										) ),		
+										),
 		'can_export'            => true,
 		'has_archive'           => true,		
 		'exclude_from_search'   => false,
