@@ -24,6 +24,7 @@
 			</div>
 			<div class="medium-2 medium-offset-4">
 				<a href="#top" class="cell go-back"><?php svg_icon('arrow_up'); ?> Nach oben</a>
+				<a href="https://mauricenaef.ch" rel="noreferrer" class="credits-logo" title="Webdesign by mauricenaef.ch" target="_blank"><img src="https://mauricenaef.ch/externaldata/logo_icon.svg" width="24" height="24" title="Web Design by MAURICE NAEF webdesign" alt="Web Design by MAURICE NAEF webdesign" /></a>
 			</div>
 		</div>
 	</footer>
