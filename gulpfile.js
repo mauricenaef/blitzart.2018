@@ -41,6 +41,7 @@ var headerJS = [
 	'node_modules/webfontloader/webfontloader.js',
 	'node_modules/jquery/dist/jquery.js',
 	'node_modules/lightgallery/dist/js/lightgallery-all.js',
+	'node_modules/animejs/lib/anime.min.js',
 	'src/js/header/**'
 ];
 var footerJS = [

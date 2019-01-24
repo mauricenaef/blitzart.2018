@@ -22,7 +22,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
 </head>
-
+<script>document.documentElement.className = "js"</script>
 <body <?php body_class('site'); ?>>
 
 	<a class="skip-link show-for-sr" href="#content"><?php esc_html_e( 'Skip to content', 'blitzart' ); ?></a>

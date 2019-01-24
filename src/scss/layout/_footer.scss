@@ -3,4 +3,13 @@
 	@include breakpoint(medium up) {
 		margin-top: 3rem; 
 	}
+	.logo-bird {
+		width: 2rem;
+		height: 2rem;
+		display: block;
+		margin-bottom: 3rem;
+	}
+	.credits-logo {
+		margin-left: 80%;
+	}
 }
