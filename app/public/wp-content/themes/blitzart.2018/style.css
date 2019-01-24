@@ -3815,7 +3815,28 @@ body {
     display: block;
     margin-bottom: 3rem; }
   .site-footer .credits-logo {
-    margin-left: 80%; }
+    margin: 0 0 1rem 0; }
+    @media screen and (min-width: 40em) {
+      .site-footer .credits-logo {
+        margin-left: 80%; } }
+  @media screen and (max-width: 39.9375em) {
+    .site-footer .last-line {
+      position: relative;
+      text-align: center;
+      padding-top: 1rem; }
+    .site-footer .go-back {
+      text-align: center;
+      display: block; }
+    .site-footer .logo-bird {
+      margin: 0;
+      position: absolute;
+      left: .5rem;
+      bottom: .75rem; }
+    .site-footer .credits-logo {
+      margin: 0;
+      position: absolute;
+      right: .5rem;
+      bottom: .75rem; } }
 
 #loader {
   display: none; }
