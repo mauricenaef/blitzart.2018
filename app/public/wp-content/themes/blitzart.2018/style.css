@@ -3813,12 +3813,7 @@ body {
     width: 2rem;
     height: 2rem;
     display: block;
-    margin-bottom: 3rem; }
-  .site-footer .credits-logo {
-    margin: 0 0 1rem 0; }
-    @media screen and (min-width: 40em) {
-      .site-footer .credits-logo {
-        margin-left: 80%; } }
+    margin: 4rem 0 1rem; }
   @media screen and (max-width: 39.9375em) {
     .site-footer .last-line {
       position: relative;
