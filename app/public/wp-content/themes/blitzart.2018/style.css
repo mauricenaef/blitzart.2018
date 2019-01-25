@@ -3737,6 +3737,7 @@ a.button:hover, a.button:focus {
     .site-header {
       background-color: #f2f2f2; } }
   .site-header .logo svg {
+    display: block;
     width: 100%;
     height: 100%; }
 
