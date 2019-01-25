@@ -3,11 +3,11 @@
 	@include breakpoint(medium up) {
 		margin-top: 3rem; 
 	}
-	.logo-bird {
-		width: 2rem;
-		height: 2rem;
+	.logo-frog {
+		width: 3.4rem;
+		height: 3.4rem;
 		display: block;
-		margin: 4rem 0 1rem;
+		margin: 4rem 0 1rem -.9rem;
 	}
 	@include breakpoint(small only) {
 		.last-line {
@@ -19,8 +19,11 @@
 			text-align: center;
 			display: block;
 		}
-		.logo-bird {
+		.logo-frog {
+			display: block;
 			margin: 0;
+			width: 2rem;
+			height: 2rem;
 			position: absolute;
 			left: .5rem;
 			bottom: .75rem;
