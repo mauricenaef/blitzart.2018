@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
             direction: "alternate",
             easing: "cubicBezier(.5, .5, .1, .3)",
             translateY: '-=100',
-            translateX: 50,
+            translateX: 150,
             //scale: .9,
             elasticity: 800,
             offset: 2500,
@@ -34,7 +34,19 @@ jQuery(document).ready(function($) {
             offset: 2500,
         });
 
-        timeline.add(bird).add(blobColor);
+        timeline.add(bird).add({
+            targets: '#loader .bird',
+            translateX: '100000px',
+            direction: 'normal',
+            duration: 550,
+            easing: 'easeInExpo',
+            loop: false,
+        }).add({
+            targets: '#loader .bird',
+            offset: 150,
+            translateX: '100000px',
+            opacity: 0
+        }).add(blobColor);
 
         timeline.play();
 
