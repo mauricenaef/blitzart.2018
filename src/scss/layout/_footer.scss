@@ -4,10 +4,11 @@
 		margin-top: 3rem; 
 	}
 	.logo-frog {
-		width: 3.4rem;
-		height: 3.4rem;
+		width: 3.2rem;
+		height: 3.2rem;
 		display: block;
 		margin: 4rem 0 1rem -.9rem;
+		overflow: visible;
 	}
 	@include breakpoint(small only) {
 		.last-line {
